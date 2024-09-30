@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 //cors
 
 const rutasPublicaciones = require("./rutas/publicaciones");
-app.use("/", rutasPublicaciones);
+app.use("/publicaciones", rutasPublicaciones);
 
 app.listen(3000, () => {
   console.log("Servidor corriendo en el puerto 3000");
